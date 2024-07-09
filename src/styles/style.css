@@ -1,0 +1,196 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: #000;
+  background-image: url(../images/cover-image-dark.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 90vh;
+
+  user-select: none;
+  position: relative;
+  z-index: 0;
+}
+
+.header {
+  padding: var(--padding-s);
+  display: grid;
+  grid-template-rows: min-content 1fr 1fr 1fr min-content;
+  align-items: center;
+  z-index: 0;
+  height: 100vh;
+
+  &::before {
+    content: "";
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border-inline-end: 1px solid var(--accent-color);
+    border-block-start: 1px solid var(--accent-color);
+    justify-self: end;
+  }
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-inline-start: 1px solid var(--accent-color);
+    border-block-end: 1px solid var(--accent-color);
+  }
+}
+
+.header__theme-menu {
+  justify-self: end;
+  padding-block-end: 25px;
+}
+
+.header__theme-menu-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  color: var(--accent-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--main-font-size);
+  line-height: 18px;
+  text-transform: lowercase;
+  border: none;
+  padding: 1.5px 13px;
+}
+
+.header__theme-menu-button:hover {
+  outline: none;
+  border: 1px solid var(--button-hover);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-block-end: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.title {
+  color: var(--main-title-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--text-shadow);
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: 23px;
+  color: var(--subtitle-color);
+  background-color: var(--text-shadow);
+}
+
+.subtitle-decor {
+  margin-block-start: 25px;
+}
+
+.main {
+  padding: 40px 10px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.section:not(:last-child) {
+  padding-block-end: 30px;
+}
+
+.section-extra__paragraph {
+  display: grid;
+}
+
+.section__paragraph-subtitle {
+  margin-block-end: 20px;
+}
+
+.section__title {
+  color: var(--accent-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.section__text {
+  padding-block: 10px 20px;
+  color: var(--main-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.subtitle__no-accent {
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.section-gallery {
+  gap: 10px;
+}
+
+.section-gallery__images {
+  display: grid;
+  gap: 10px;
+}
+
+.section-gallery__images-item {
+  object-fit: cover;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: min-content 1fr min-content;
+  padding: 10px;
+  height: 100vh;
+
+
+  &::before {
+    content: "";
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border-inline-end: 1px solid var(--accent-color);
+    border-block-start: 1px solid var(--accent-color);
+    justify-self: end;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-inline-start: 1px solid var(--accent-color);
+    border-block-end: 1px solid var(--accent-color);
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .footer__title {
+    justify-self: center;
+    grid-row: 1 / span 3;
+  }
+}

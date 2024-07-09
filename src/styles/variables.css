@@ -1,0 +1,20 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+:root{
+  font-family: "IBM Plex mono", sans-serif;
+
+  --main-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --subtitle-color: #000028;
+  --main-title-color: #DB00FF;
+  --text-shadow: #FF0070;
+  --button-hover: rgba(255, 0, 112, 0.4);
+
+  --padding-s: 10px;
+  --padding-m: 20px;
+  --padding-l: 40px;
+
+  --main-font-size: 18px;
+}

@@ -41,7 +41,6 @@
     color: var(--accent-color);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
   }
@@ -79,7 +78,6 @@
       color: var(--accent-color);
       font-style: normal;
       font-weight: 400;
-      font-size: 18px;
       line-height: 25px;
       text-transform: uppercase;
     }
@@ -102,5 +100,20 @@
   .theme_dark .header__decoration {
     top: 20px;
     right: 29px;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  .header__decoration {
+    &::before {
+      top: var(--spacing-m);
+      right: var(--spacing-m);
+    }
+
+    &::after {
+      top: 25px;
+      right: 25px;
+    }
   }
 }

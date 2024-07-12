@@ -12,9 +12,15 @@
   --text-shadow: #FF0070;
   --button-hover: rgba(255, 0, 112, 0.4);
 
-  --padding-s: 10px;
-  --padding-m: 20px;
-  --padding-l: 40px;
+  --spacing-s: 10px;
+  --spacing-m: 20px;
+  --spacing-l: 40px;
+  --spacing-l-1: 50px;
+  --spacing-xl: 60px;
+  --spacing-xxl: 80px;
 
-  --main-font-size: 18px;
+  --bold: 700;
+  --normal: 400;
+
+  --font-size-main: 18px;
 }

@@ -280,6 +280,7 @@
   font-size: var(--font-size-main);
   font-style: normal;
   font-weight: var(--bold);
+  line-height: 23.4px;
 }
 
 .section__text {
@@ -291,6 +292,7 @@
 
 .subtitle__no-accent {
   line-height: 23.4px;
+  font-weight: var(--normal);
 }
 
 .section-gallery {

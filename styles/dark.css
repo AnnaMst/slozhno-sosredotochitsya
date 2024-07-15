@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-color: #000;
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url(/images/cover-image-dark.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;

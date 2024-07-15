@@ -24,6 +24,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  background-color: #FFF1F7;
 }
 
 .theme_light .header__decoration::before {
@@ -53,6 +54,7 @@
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
+      background-color: #FFF1F7;
     }
   
   .header__decoration::before {

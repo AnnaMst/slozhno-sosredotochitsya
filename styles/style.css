@@ -343,7 +343,6 @@
 
   .section-gallery__images-item:nth-of-type(5) {
     grid-column: span 2;
-    padding-block-start: 5px;
   }
 }
 

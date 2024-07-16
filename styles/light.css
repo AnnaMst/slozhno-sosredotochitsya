@@ -27,14 +27,9 @@
   background-color: #FFF1F7;
 }
 
-.theme_light .header__decoration::before {
- content: "";
+.theme_light .header__decoration {
+  display: none;
 }
-
-.theme_light .header__decoration::after {
-  background-color: transparent;
-  box-shadow: none;
- }
 
 
 
@@ -55,16 +50,6 @@
       background-position: top;
       background-size: cover;
       background-color: #FFF1F7;
-    }
-  
-  .header__decoration::before {
-    content: "";
-    }
-     
-  .header__decoration::after {
-    background-color: transparent;
-    box-shadow: none;
-  }
-     
+    }    
 
 }

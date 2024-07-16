@@ -26,44 +26,12 @@
   --button-hover: rgba(255, 0, 112, 0.4);
 }
 
-.theme_dark .header__decoration::before {
-  display: block;
+.theme_dark .header__decoration {
+  display: flex;
 }
 
 @media (prefers-color-scheme: dark) {
   .header__decoration {
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    right: 20px;
     display: flex;
-  
-    &::before {
-      content: "rec";
-      color: var(--accent-color);
-      font-style: normal;
-      font-weight: 400;
-      line-height: 25px;
-      text-transform: uppercase;
-    }
-  
-    &::after {
-      content: "";
-      margin-inline-start: 10px;
-      display: inline-block;
-      width: 9px;
-      height: 9px;
-      background-color: var(--accent-color);
-      border-radius: 50%;
-      box-shadow: 0px 0px 4px 2px var(--accent-color);
-      align-self: center;
-    }
-  }
-}
-
-@media (prefers-color-scheme: dark) and (min-width: 1024px) {
-  .theme_dark .header__decoration {
-    top: 20px;
-    right: 29px;
   }
 }

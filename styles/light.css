@@ -4,16 +4,6 @@
   переключая тему
 */
 
-:root .theme_light {
-    --main-color: #353430;
-    --accent-color: #353430;
-    --subtitle-color: #353430;
-    --main-title-color: #FFC2E6;
-    --text-shadow: #FF8DCB;
-    --button-hover: rgba(50, 49, 45, 0.4);
-}
-
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -25,23 +15,20 @@
   background-position: top;
   background-size: cover;
   background-color: #FFF1F7;
+
+  --main-color: #353430;
+  --accent-color: #353430;
+  --subtitle-color: #353430;
+  --main-title-color: #FFC2E6;
+  --text-shadow: #FF8DCB;
+  --button-hover: rgba(50, 49, 45, 0.4);
 }
 
 .theme_light .header__decoration {
   display: none;
 }
 
-
-
 @media (prefers-color-scheme: light) {
-  :root {
-    --main-color: #353430;
-    --accent-color: #353430;
-    --subtitle-color: #353430;
-    --main-title-color: #FFC2E6;
-    --text-shadow: #FF8DCB;
-    --button-hover: rgba(50, 49, 45, 0.4);
-  }
 
   .page {
       background-image: url(../images/cover-image-light.png);
@@ -50,6 +37,16 @@
       background-position: top;
       background-size: cover;
       background-color: #FFF1F7;
-    }    
 
+      --main-color: #353430;
+      --accent-color: #353430;
+      --subtitle-color: #353430;
+      --main-title-color: #FFC2E6;
+      --text-shadow: #FF8DCB;
+      --button-hover: rgba(50, 49, 45, 0.4);
+  }    
+
+  .header__decoration {
+    display: none;
+  }
 }
